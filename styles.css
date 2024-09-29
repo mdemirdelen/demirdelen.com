@@ -32,7 +32,7 @@ body {
 /* Hero Bölümü */
 .hero {
   text-align: center;
-  padding: 100px 0;
+  padding: 100px 0; /* Desktop için boşluk */
 }
 
 /* Profil Fotoğrafı */
@@ -105,6 +105,8 @@ footer {
 }
 
 /* Responsive Tasarım */
+
+/* Tablet ve küçük cihazlar */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
@@ -125,10 +127,15 @@ footer {
   }
 }
 
+/* Mobil ekranlar */
 @media (max-width: 480px) {
   .profile-photo {
     width: 150px;
     height: 150px;
+  }
+
+  .hero {
+    padding: 50px 0; /* Mobil için üst ve alt boşluğu azalttık */
   }
 
   .hero h1 {
