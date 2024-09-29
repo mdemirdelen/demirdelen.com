@@ -21,6 +21,9 @@
 </head>
 <body>
     <header>
+        <nav class="navbar">
+            <!-- Hamburger menü istenirse buraya eklenebilir -->
+        </nav>
 
         <section class="hero">
             <img src="images/profil.jpg" alt="Mert Demirdelen" class="profile-photo">
@@ -28,10 +31,25 @@
             <h2>Managing mobile applications with focus on growth and user experience.</h2>
             <p>Based in Ankara, Turkey. Helping companies scale their mobile apps and grow their user base.</p>
             <div class="social-links">
-                <a href="mailto:mert@demirdelen.com" class="cta" onclick="gtag('event', 'click', {'event_category': 'Email', 'event_label': 'Email Button'});"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://www.linkedin.com/in/mert-demirdelen/" target="_blank" class="cta" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'LinkedIn'});"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="https://superpeer.com/growth" target="_blank" class="cta" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Superpeer'});"><i class="fas fa-microphone"></i> Superpeer</a>
-                <a href="https://x.com/itsnotmyai" target="_blank" class="cta" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'X'});"><i class="fab fa-twitter"></i> X</a>
+                <!-- Email Click -->
+                <a href="mailto:mert@demirdelen.com" class="cta" 
+                   onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Email Click'});">
+                   <i class="fas fa-envelope"></i> Email</a>
+            
+                <!-- LinkedIn Click -->
+                <a href="https://www.linkedin.com/in/mert-demirdelen/" target="_blank" class="cta" 
+                   onclick="gtag('event', 'linkedin_click', {'event_category': 'Social', 'event_label': 'LinkedIn Click'});">
+                   <i class="fab fa-linkedin"></i> LinkedIn</a>
+            
+                <!-- Superpeer Click -->
+                <a href="https://superpeer.com/growth" target="_blank" class="cta" 
+                   onclick="gtag('event', 'superpeer_click', {'event_category': 'Social', 'event_label': 'Superpeer Click'});">
+                   <i class="fas fa-microphone"></i> Superpeer</a>
+            
+                <!-- X (Twitter) Click -->
+                <a href="https://x.com/itsnotmyai" target="_blank" class="cta" 
+                   onclick="gtag('event', 'x_click', {'event_category': 'Social', 'event_label': 'X Click'});">
+                   <i class="fab fa-twitter"></i> X</a>
             </div>
     </header>
 
