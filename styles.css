@@ -1,0 +1,149 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f5f7;
+  color: #222;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Navbar - Eğer hamburger menü istenirse */
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Hero Bölümü */
+.hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Profil Fotoğrafı */
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  border: 5px solid #333; /* Elegant bir çerçeve */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Yumuşak gölge */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a1a; /* Daha koyu ve belirgin */
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333; /* Daha koyu gri */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #444; /* Kontrastı artırılmış */
+  margin-bottom: 40px;
+}
+
+/* Sosyal Linkler */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links .cta {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  border-radius: 30px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.social-links .cta i {
+  font-size: 1.2rem;
+}
+
+.social-links .cta:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 0.9rem;
+  }
+}
