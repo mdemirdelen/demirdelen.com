@@ -1,4 +1,4 @@
-/* Genel Ayarlar */
+/* General Settings */
 * {
   margin: 0;
   padding: 0;
@@ -13,60 +13,81 @@ body {
   padding: 0 20px;
 }
 
-/* Navbar - Eğer hamburger menü istenirse */
-.menu-icon {
-  font-size: 1.8rem;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-/* Hero Bölümü */
+/* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 0; /* Desktop için boşluk */
+  padding: 100px 0;
 }
 
-/* Profil Fotoğrafı */
 .profile-photo {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 30px;
-  border: 5px solid #333; /* Elegant bir çerçeve */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Yumuşak gölge */
+  border: 5px solid #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-.hero h1 {
+h1 {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  color: #1a1a1a; /* Daha koyu ve belirgin */
+  color: #1a1a1a;
 }
 
-.hero h2 {
+h2 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-bottom: 20px;
-  color: #333; /* Daha koyu gri */
+  color: #333;
 }
 
-.hero p {
+p {
   font-size: 1.2rem;
-  color: #444; /* Kontrastı artırılmış */
+  color: #444;
   margin-bottom: 40px;
 }
 
-/* Sosyal Linkler */
+/* Highlight Effect */
+.highlight {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px; /* Adds small space between text and highlight */
+}
+
+.highlight::before {
+  content: "";
+  position: absolute;
+  width: 115%; /* Extend the width slightly beyond the text */
+  height: 30%; /* Make the highlight thinner */
+  bottom: 6px; /* Moves the highlight upward */
+  left: -7%; /* Slight offset for natural spill effect */
+  background-color: rgba(
+    255,
+    215,
+    0,
+    0.5
+  ); /* Softer pastel yellow with transparency */
+  border-radius: 5px; /* Slight roundness */
+  z-index: -1;
+  transform: rotate(-3deg); /* Add a slight tilt for a natural effect */
+}
+
+/* Variations for Random Tilts */
+.highlight:nth-child(2)::before {
+  transform: rotate(-2deg);
+}
+
+.highlight:nth-child(3)::before {
+  transform: rotate(-4deg);
+}
+
+.highlight:nth-child(4)::before {
+  transform: rotate(-1deg);
+}
+
+/* Social Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -104,15 +125,13 @@ footer {
   color: #777;
 }
 
-/* Responsive Tasarım */
-
-/* Tablet ve küçük cihazlar */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .hero h1 {
+  h1 {
     font-size: 2.2rem;
   }
 
-  .hero h2 {
+  h2 {
     font-size: 1.6rem;
   }
 
@@ -127,7 +146,6 @@ footer {
   }
 }
 
-/* Mobil ekranlar */
 @media (max-width: 480px) {
   .profile-photo {
     width: 150px;
@@ -135,18 +153,18 @@ footer {
   }
 
   .hero {
-    padding: 50px 0; /* Mobil için üst ve alt boşluğu azalttık */
+    padding: 50px 0;
   }
 
-  .hero h1 {
+  h1 {
     font-size: 2rem;
   }
 
-  .hero h2 {
+  h2 {
     font-size: 1.4rem;
   }
 
-  .hero p {
+  p {
     font-size: 1rem;
   }
 
