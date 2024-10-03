@@ -5,18 +5,34 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%; /* Ensure body takes up full height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container that will wrap everything */
 body {
   font-family: "Inter", sans-serif;
   background-color: #f4f5f7;
   color: #222;
   line-height: 1.6;
   padding: 0 20px;
+  flex: 1; /* Allows the main content to grow and push the footer */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 100px 0;
+  padding: 80px 0; /* Reduced padding */
+  flex-grow: 1; /* Makes the hero section take up available space */
 }
 
 .profile-photo {
@@ -24,7 +40,7 @@ body {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Reduced margin */
   border: 5px solid #333;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
@@ -39,14 +55,14 @@ h1 {
 h2 {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Reduced margin */
   color: #333;
 }
 
 p {
   font-size: 1.2rem;
   color: #444;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* Reduced margin */
 }
 
 /* Highlight Effect */
@@ -60,8 +76,8 @@ p {
   content: "";
   position: absolute;
   width: 115%; /* Extend the width slightly beyond the text */
-  height: 30%; /* Make the highlight thinner */
-  bottom: 6px; /* Moves the highlight upward */
+  height: 27%; /* Make the highlight thinner */
+  bottom: 8px; /* Moves the highlight upward */
   left: -7%; /* Slight offset for natural spill effect */
   background-color: rgba(
     255,
@@ -91,14 +107,14 @@ p {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 10px; /* Reduced gap */
 }
 
 .social-links .cta {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 8px 18px; /* Reduced padding */
   border: 2px solid #333;
   border-radius: 30px;
   color: #333;
@@ -120,13 +136,22 @@ p {
 /* Footer */
 footer {
   text-align: center;
-  padding: 40px 0;
-  font-size: 0.9rem;
-  color: #777;
+  padding: 20px 0;
+  margin-top: auto; /* Ensures the footer is pushed to the bottom */
+}
+
+/* Styling specific to the footer's p tag */
+footer p {
+  font-size: 0.8rem !important; /* Ensure the font size is applied */
+  color: #777 !important; /* Ensure the correct color is applied */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero {
+    padding: 60px 0; /* Reduced padding for tablet */
+  }
+
   h1 {
     font-size: 2.2rem;
   }
@@ -153,7 +178,7 @@ footer {
   }
 
   .hero {
-    padding: 50px 0;
+    padding: 40px 0; /* Reduced padding for mobile */
   }
 
   h1 {
@@ -166,9 +191,15 @@ footer {
 
   p {
     font-size: 1rem;
+    margin-bottom: 20px; /* Reduced margin for mobile */
   }
 
   .cta {
     font-size: 0.9rem;
+    padding: 8px 18px; /* Adjust padding */
+  }
+
+  footer {
+    padding: 15px 0;
   }
 }
