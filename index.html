@@ -5,49 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mert Demirdelen</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-304MKCZWT1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-304MKCZWT1');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-304MKCZWT1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-304MKCZWT1');
+    </script>
 </head>
 <body>
     <header>
-
-               <section class="hero">
+        <section class="hero">
             <img src="images/profil.jpg" alt="Mert Demirdelen" class="profile-photo">
-            <h1>Hello, I’m Mert.</h1>
-            <h2>I manage mobile applications, focusing on delivering growth and optimized user experiences.</h2>
+            <h1>Hello, <span class="highlight">I’m Mert</span>.</h1>
+            <h2>I manage <span class="highlight">mobile applications</span>, focusing on delivering <span class="highlight">growth</span> and optimized user experiences.</h2>
             <p>From Ankara, I help businesses expand their reach and strengthen their app’s performance.</p>
             <div class="social-links">
-                <!-- Email Click -->
-                <a href="mailto:mert@demirdelen.com" class="cta" 
-                   onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Email Click'});">
-                   <i class="fas fa-envelope"></i> Email</a>
-            
-                <!-- LinkedIn Click -->
-                <a href="https://www.linkedin.com/in/mert-demirdelen/" target="_blank" class="cta" 
-                   onclick="gtag('event', 'linkedin_click', {'event_category': 'Social', 'event_label': 'LinkedIn Click'});">
-                   <i class="fab fa-linkedin"></i> LinkedIn</a>
-            
-                <!-- Superpeer Click -->
-                <a href="https://superpeer.com/growth" target="_blank" class="cta" 
-                   onclick="gtag('event', 'superpeer_click', {'event_category': 'Social', 'event_label': 'Superpeer Click'});">
-                   <i class="fas fa-microphone"></i> Superpeer</a>
-            
-                <!-- X (Twitter) Click -->
-                <a href="https://x.com/itsnotmyai" target="_blank" class="cta" 
-                   onclick="gtag('event', 'x_click', {'event_category': 'Social', 'event_label': 'X Click'});">
-                   <i class="fab fa-twitter"></i> X</a>
+                <a href="mailto:mert@demirdelen.com" class="cta" onclick="gtag('event', 'email_click', {'event_category': 'Contact', 'event_label': 'Email Click'});"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/mert-demirdelen/" target="_blank" class="cta" onclick="gtag('event', 'linkedin_click', {'event_category': 'Social', 'event_label': 'LinkedIn Click'});"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://superpeer.com/growth" target="_blank" class="cta" onclick="gtag('event', 'superpeer_click', {'event_category': 'Social', 'event_label': 'Superpeer Click'});"><i class="fas fa-microphone"></i> Superpeer</a>
+                <a href="https://x.com/itsnotmyai" target="_blank" class="cta" onclick="gtag('event', 'x_click', {'event_category': 'Social', 'event_label': 'X Click'});"><i class="fab fa-twitter"></i> X</a>
             </div>
+        </section>
     </header>
 
     <footer>
